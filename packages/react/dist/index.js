@@ -75,6 +75,7 @@ var Box = (0, import_react.styled)("div", {
   backgroundColor: "$gray800",
   border: "1px solid $grat600"
 });
+Box.displayName = "Box";
 
 // src/components/Text.tsx
 var import_react2 = require("@stitches/react");
@@ -104,6 +105,7 @@ var Text = (0, import_react2.styled)("p", {
     size: "md"
   }
 });
+Text.displayName = "Text";
 
 // src/components/Heading.tsx
 var import_react3 = require("@stitches/react");
@@ -128,6 +130,7 @@ var Heading = (0, import_react3.styled)("h2", {
     size: "md"
   }
 });
+Heading.displayName = "Heading";
 
 // src/components/Avatar/index.tsx
 var import_react5 = __toESM(require("react"));
@@ -167,6 +170,7 @@ var AvatarFallback = (0, import_react4.styled)(Avatar.Fallback, {
 var Avatar2 = (props) => {
   return /* @__PURE__ */ import_react5.default.createElement(AvatarConatiner, null, /* @__PURE__ */ import_react5.default.createElement(AvatarImage, __spreadValues({}, props)), /* @__PURE__ */ import_react5.default.createElement(AvatarFallback, { delayMs: 600 }, /* @__PURE__ */ import_react5.default.createElement(import_phosphor_react.User, null)));
 };
+Avatar2.displayName = "Avatar";
 
 // ../tokens/dist/index.mjs
 var colors = {
@@ -339,6 +343,7 @@ var Button = styled5("button", {
     size: "md"
   }
 });
+Button.displayName = "Button";
 
 // src/components/TextInput/index.tsx
 var import_react7 = __toESM(require("react"));
@@ -390,6 +395,7 @@ function TextInput(_a) {
   var _b = _a, { prefix } = _b, props = __objRest(_b, ["prefix"]);
   return /* @__PURE__ */ import_react7.default.createElement(TextInputContainer, null, !!prefix && /* @__PURE__ */ import_react7.default.createElement(Prefix, null, prefix), /* @__PURE__ */ import_react7.default.createElement(Input, __spreadValues({}, props)));
 }
+TextInput.displayName = "TextInput";
 
 // src/components/TextArea.tsx
 var TextArea = styled5("textarea", {
@@ -416,6 +422,7 @@ var TextArea = styled5("textarea", {
     color: "$gray400"
   }
 });
+TextArea.displayName = "TextArea";
 
 // src/components/Checkbox/index.tsx
 var import_phosphor_react2 = require("phosphor-react");
@@ -476,6 +483,7 @@ var CheckboxIndicator = styled5(Checkbox.Indicator, {
 function Checkbox2(props) {
   return /* @__PURE__ */ import_react8.default.createElement(CheckboxContainer, __spreadValues({}, props), /* @__PURE__ */ import_react8.default.createElement(CheckboxIndicator, { asChild: true }, /* @__PURE__ */ import_react8.default.createElement(import_phosphor_react2.Check, { weight: "bold" })));
 }
+Checkbox2.displayName = "Checkbox";
 
 // src/components/MultiStep/index.tsx
 var import_react9 = __toESM(require("react"));
@@ -513,6 +521,7 @@ function MultiStep({ size, currentStep = 1 }) {
     return /* @__PURE__ */ import_react9.default.createElement(Step, { key: step, active: currentStep >= step });
   })));
 }
+MultiStep.displayName = "MultiStep";
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
