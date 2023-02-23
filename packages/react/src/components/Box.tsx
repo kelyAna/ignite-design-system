@@ -2,7 +2,7 @@ import { styled } from '@stitches/react'
 import { ComponentProps } from 'react'
 
 export const Box = styled('div', {
-  padding: '$d',
+  padding: '$6',
   borderRadius: '$md',
   backgroundColor: '$gray800',
   border: '1px solid $grat600',

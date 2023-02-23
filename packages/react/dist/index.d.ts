@@ -18,7 +18,7 @@ interface TextProps extends ComponentProps$1<typeof Text> {
 }
 
 declare const Heading: _stitches_react_types_styled_component.StyledComponent<"h2", {
-    size?: "sm" | "md" | "lg" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl" | undefined;
+    size?: "sm" | "md" | "lg" | "2xl" | "4xl" | "5xl" | "6xl" | "3xl" | undefined;
 }, {}, _stitches_react_types_css_util.CSS<{}, {}, {}, {}>>;
 interface HeadingProps extends ComponentProps$1<typeof Heading> {
     as?: ElementType;

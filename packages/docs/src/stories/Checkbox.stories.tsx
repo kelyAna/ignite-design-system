@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
- import { Box, Text, Checkbox, CheckboxProps } from '@ignite-ui/react/src/index'
+ import { Box, Text, Checkbox, CheckboxProps } from '@ana-ignite-ui-design-system/react/src/index'
 import React from 'react'
 
  export default {
