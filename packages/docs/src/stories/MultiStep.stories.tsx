@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
- import { Box, MultiStep, MultiStepProps } from '@ana-ignite-ui-design-system/react'
+import { Box, MultiStep, MultiStepProps } from '@ana-ignite-ui-design-system/react/src/index'
 import React from 'react'
 
  export default {
