@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { BoxProps, ToastComponent } from '@ana-ignite-ui-design-system/react/src/index'
+import { ToastComponentProps } from '@ana-ignite-ui-design-system/react/src/components/Toast/Toast'
 
 export default {
   title: 'Surfaces/Toast',
@@ -16,7 +17,7 @@ export default {
       },
     },
   },
-} as Meta<BoxProps>
+} as Meta<ToastComponentProps>
 
 export const Primary: StoryObj<BoxProps> = {}
 
