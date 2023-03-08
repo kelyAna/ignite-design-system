@@ -1,16 +1,14 @@
-import * as Toast from '@radix-ui/react-toast'
 import { styled } from '../../styles'
 
-export const ToastContainer = styled(Toast.Provider, {})
+export const ToastComponentContainer = styled('div', {})
 
-export const ToastContent = styled(Toast.Root, {
+export const ToastContent = styled('div', {
   alignItems: 'flex-start',
   padding: '12px 20px',
   gap: '$2',
 
   position: 'absolute',
   width: '360px',
-  height: '82px',
   right: '32px',
   bottom: '32px',
 
@@ -30,16 +28,18 @@ export const ToastButton = styled('button', {
   fontSize: '$md',
 })
 
-export const ToastTitle = styled(Toast.Title, {
-  color: '$white',
+export const ToastTitle = styled('p', {
+  color: 'white',
   fontFamily: 'Roboto',
   fontSize: '$lg',
 })
 
-export const ToastDescription = styled(Toast.Description, {
+export const ToastDescription = styled('p', {
   color: '$gray200',
   fontFamily: 'Roboto',
   fontSize: '$sm',
+
+  textAlign: 'start',
 })
 
 export const ToastCloseButton = styled('button', {
@@ -52,6 +52,4 @@ export const ToastCloseButton = styled('button', {
 export const ToastHeader = styled('div', {
   display: 'flex',
   justifyContent: 'space-between',
-
-  marginTop: '$3',
 })

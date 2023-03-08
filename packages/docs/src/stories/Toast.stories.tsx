@@ -1,23 +1,24 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { BoxProps, ToastComponent } from '@ana-ignite-ui-design-system/react/src/index'
-import { ToastComponentProps } from '@ana-ignite-ui-design-system/react/src/components/Toast/Toast'
+import { ToastComponent } from '@ana-ignite-ui-design-system/react/src/index'
+import { ToastComponentProps } from '@ana-ignite-ui-design-system/react/src/components/Toast/index'
+import React, { useState } from 'react'
 
 export default {
   title: 'Surfaces/Toast',
   component: ToastComponent,
-  args: {
-    title: 'Toast component',
-    description: '',
-    date: '2021-01-01T12:00:00-04:00'
-  },
-  argTypes: {
-    children: {
-      control: {
-        type: null,
-      },
+  decorators: [
+    () => {
+      const [showToast, setShowToast] = useState(false) 
+
+      return (
+        <button onClick={() => setShowToast(!showToast)}>
+          AQUI
+          <ToastComponent title="Agendamento realizado" description="Quarta-feira, 23 de Outubro às 16h" showToast={showToast} />
+        </button>
+      )
     },
-  },
+  ],
 } as Meta<ToastComponentProps>
 
-export const Primary: StoryObj<BoxProps> = {}
+export const Primary: StoryObj<ToastComponentProps> = {}
 
